@@ -21,6 +21,8 @@ public class Appling_Fb {
 		WebDriver  driver=new ChromeDriver();
 		
 		driver.get("http://orangehrm.qedgetech.com");
+		System.out.println(" Url entered successfully : code modified");
+		
 		
 		FileInputStream fis=new FileInputStream("C:\\All Practice Chart//Primusbanklogin.xlsx");
 		

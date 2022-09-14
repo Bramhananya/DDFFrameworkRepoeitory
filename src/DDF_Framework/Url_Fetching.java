@@ -22,6 +22,13 @@ public class Url_Fetching {
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.get("https://facebook.com");
 		
+		Thread.sleep(3000);
+		
+		String current_page_url_is = driver.getCurrentUrl();
+		System.out.println("URL is =>> " + current_page_url_is);
+		
+		Thread.sleep(2000);
+		
 		String title = driver.getTitle();
 		System.out.println("The title of the page is  => "+ title);
 		
